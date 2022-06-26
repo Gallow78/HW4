@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--
+File: index.html
+GUI Assignment: HW4 jQuery Plugin/UI with Your Dynamic Table
+Wesley Gallo,  UMass Lowell Computer Science, Wesley_Gallo@student.uml.edu
+
+Interactive Dynamic Table
+Copyright (c) 2022 by Gallo. All rights reserved. It may be freely copied or 
+excerpted for educational purposes with credit to the author.
+references: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+https://www.w3schools.com/
+updated by WG on June 25,, 2022, at 7:30 PM
+-->
+
+<!--TODAY-->
+
+<html lang="en">
+
+<head>
+	<title>Interactive Dynamic Table HW4</title>
+	<!-- Linking CSS StyleSheet -->
+	<link rel="stylesheet" href="css/style.css"> </head>
+	<!-- JQuery Added and JQuery User Interface -->
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" />
+	<!-- Heading and Information for the top of the page -->
+<body>
+	<h1>Interactive Dynamic Table</h1>
+	<p>Please enter 4 integer numbers in each of the fields below, and select "Submit" to create a Dynamic Multiplication Table. Or Use the sliders for input</p>
+	<form id="userinput">
+		<!-- Verticle Variables and input. As Well as Slider ids for JQuery-->
+		<div class="verticle">
+			<h2>Verticle Columns</h2>
+			<br>
+			<label for="VMin">Verticle Minimum:</label>
+			<input type="number" id="VMin" placeholder="Verticle Mininmum" name="Vmin" size="50" value="0">
+			<div class="slider" id="slider1" ></div>
+			<br>
+			<br>
+			<label for="VMax"> Verticle Maximum:</label>
+			<input type="number" id="VMax" placeholder="Verticle Maximmum" name="VMax" size="50" value="0">
+			<div class="slider" id="slider2" ></div>
+			<br>
+			<br> </div>
+		<br>
+		<br>
+		<!-- Horizontal Variables and input. As Well as Slider ids for JQuery-->
+		<div class="horizontal">
+			<h2>Horizontal Rows</h2>
+			<br>
+			<label for="HMin">Horizontal Minimum:</label>
+			<input type="number" id="HMin" placeholder="Horizontal Minimum" name="Hmin" size="50" value="0">
+			<div class="slider" id="slider3" ></div>
+			<br>
+			<label for="HMax"> Horizontal Maximum:</label>
+			<input type="number" id="HMax" placeholder="Horizontal Maximum" name="HMax" size="50" value="0">
+			<div class="slider" id="slider4" ></div>
+
+			<br>
+			<br> </div>
+	</form>
+	<!--Button with functions -->
+	<br>
+	<input type="button" onclick="myFunction()" class="button" value="Submit">
+	<input type="button" onclick="SaveTable()" class="button" value="Save Table">
+	<input type="button" onclick="removeTabs()" class="button" value="Delete Tab">
+
+	<div class="tablefix">
+		<table id="makeTable"> </table>
+	</div>
+
+	<!--Button with functions -->
+
+		<h3>Saved Tables Tabs</h3>
+		<div id="tabs">
+			<ul></ul>
+		</div>
+	
+		<br></br>
+  
+
+	<!-- Linking External JavaScript File and Jquery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+	<script src="Javascript/Script.js"></script>
+
+</body>
+
+</html>

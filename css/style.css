@@ -1,0 +1,97 @@
+/*File: css.html 
+GUI Assignment: HW4 jQuery Plugin/UI with Your Dynamic Table
+Wesley Gallo,  UMass Lowell Computer Science, Wesley_Gallo@student.uml.edu
+
+Interactive Dynamic Table
+Copyright (c) 2022 by Gallo. All rights reserved. It may be freely copied or 
+excerpted for educational purposes with credit to the author.
+references: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+https://www.w3schools.com/
+updated by WG on June 25,, 2022, at 7:30 PM
+*/
+
+
+/*Error Message Styling*/
+
+
+.error {
+  color: red;
+}
+
+/*Body, H1, H2, H3 css styling in various colors and centering*/
+
+body {
+  background-color: rgb(174, 255, 248);
+}
+
+h1 {
+  color: navy;
+  font-weight: 900;
+}
+
+h2 {
+  color: rgba(167, 5, 5, 0.842);
+}
+
+h3 {
+  color: black;
+  text-align: center;
+}
+
+/*Boxes for Columns and Rows*/
+
+.verticle {
+  border: 3px solid black;
+  text-align: left;
+  padding: 10px 10px; 
+  width: 60%;
+}
+
+.horizontal {
+  border: 3px solid black;
+  text-align: left;
+  padding: 10px 10px; 
+  width: 60%;
+}
+
+p{
+  color: black;
+  font-weight: bold;
+}
+
+/* Scrolling added */ 
+.tablefix {
+width: 100%;
+height: 100%;
+position: relative;
+overflow-y: Scroll; 
+overflow-x: scroll;
+}
+
+/* Button Styling */ 
+.button {
+  color: white;
+  font-weight: 500;
+  background-color: green;
+  padding: 10px 32px;
+  font-size: 16px;
+  text-align: center;
+}
+
+form{
+  font-weight: bold;
+}
+
+/* Table Styling*/
+#makeTable th, tr {
+  background-color: blue;
+  color: white;
+  border: 2px solid black;
+  padding: 10px 10px; 
+  text-align: center;
+}
+
+/* making the even table rows red*/
+#makeTable tr:nth-of-type(even){
+  background-color: red;
+}
